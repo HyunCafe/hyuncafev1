@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HyunCafe Portfolio</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="description" content="HyunCafe Portfolio" />
+    <meta name="author" content="HyunCafe" />
+    <meta name="keywords" content="keyword1, keyword2, keyword3" />
+    <meta property="og:title" content="HyunCafe Portfolio" />
+    <meta
+      property="og:description"
+      content="Description of the page for social media"
+    />
+    <meta property="og:image" content="path/to/image.jpg" />
+  </head>
+  <body class="page">
+    <header class="header">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="#home">Home</a></li>
+          <li class="nav__item">
+            <a class="nav__link" href="#about">About</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#projects">Projects</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section id="home" class="home">
+        <h1 class="home__title">Hyun</h1>
+        <p class="home__subtitle">Front-End Developer</p>
+      </section>
+
+      <section id="about" class="about">
+        <h2 class="about__title">About Me</h2>
+        <p class="about__text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea maiores
+          incidunt magnam voluptatem, cupiditate, fugiat rerum exercitationem
+          iure a quam nisi praesentium dolorem natus. Hic optio temporibus saepe
+          nulla earum?
+        </p>
+        <h3 class="about__skills-title">Skills</h3>
+        <ul class="skills">
+          <li class="skills__item">HTML</li>
+          <li class="skills__item">CSS</li>
+          <li class="skills__item">JavaScript</li>
+        </ul>
+      </section>
+
+      <section id="projects" class="projects">
+        <h2 class="projects__title">My Projects</h2>
+        <ul class="projects__list">
+          <li class="projects__item">
+            <h3 class="projects__item-title">Project 1</h3>
+            <p class="projects__item-description"></p>
+          </li>
+          <li class="projects__item">
+            <h3 class="projects__item-title">Project 2</h3>
+            <p class="projects__item-description"></p>
+          </li>
+          <li class="projects__item">
+            <h3 class="projects__item-title">Project 3</h3>
+            <p class="projects__item-description"></p>
+          </li>
+          <li class="projects__item">
+            <h3 class="projects__item-title">Project 4</h3>
+            <p class="projects__item-description"></p>
+          </li>
+          <li class="projects__item">
+            <h3 class="projects__item-title">Project 5</h3>
+            <p class="projects__item-description"></p>
+          </li>
+          <li class="projects__item">
+            <h3 class="projects__item-title">Project 6</h3>
+            <p class="projects__item-description"></p>
+          </li>
+          <li class="projects__item">
+            <h3 class="projects__item-title">Project 7</h3>
+            <p class="projects__item-description"></p>
+          </li>
+          <li class="projects__item">
+            <h3 class="projects__item-title">Project 8</h3>
+            <p class="projects__item-description"></p>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer">
+      <section id="contact" class="contact">
+        <h2 class="contact__title">Contact Me</h2>
+        <form class="contact__form">
+          <label class="contact__label" for="name">Name:</label>
+          <input
+            class="contact__input"
+            type="text"
+            id="name"
+            name="name"
+            required
+          />
+
+          <label class="contact__label" for="email">Email:</label>
+          <input
+            class="contact__input"
+            type="email"
+            id="email"
+            name="email"
+            required
+          />
+
+          <label class="contact__label" for="message">Message:</label>
+          <textarea
+            class="contact__textarea"
+            id="message"
+            name="message"
+            required
+          ></textarea>
+
+          <button class="contact__submit" type="submit">Send Message</button>
+        </form>
+      </section>
+
+      <div class="footer__content">
+        <p class="footer__text">2023 HyunCafe</p>
+        <ul class="footer__links">
+          <li class="footer__item">
+            <a class="footer__link" href="#">Terms of Service</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Privacy Policy</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Cookie Policy</a>
+          </li>
+        </ul>
+        <div class="social">
+          <a class="social__link social__link--linkedin" href="#">LinkedIn</a>
+          <a class="social__link social__link--github" href="#">GitHub</a>
+          <a class="social__link social__link--devto" href="#">Dev.to</a>
+          <a class="social__link social__link--devcard" href="#">Dev Card</a>
+          <a class="social__link social__link--discord" href="#">Discord</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
