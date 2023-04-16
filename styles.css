@@ -18,11 +18,12 @@ ul {
   list-style-type: none;
 }
 
-/* Header */
+/* <------------------------ Header ------------------------> */
 .header {
   display: flex;
   justify-content: center;
 }
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -52,8 +53,20 @@ ul {
 .nav__link:focus {
   border-bottom-color: #333;
 }
+/* <------------------- About / Hero Container -------------------> */
 
-/* Main content */
+
+.home__subtitle {
+  font-size: 3rem;
+  font-family: 'QuirkyRobot', sans-serif;
+}
+
+#typed {
+  font-weight: bold;
+}
+
+
+/* <------------------------ Main ------------------------> */
 .main {
   margin: 0 auto;
   padding: 2em;
@@ -70,7 +83,44 @@ ul {
   margin-bottom: 2em;
 }
 
-/* About section */
+
+/* <------------------------ Projects ------------------------> */
+.projects__item {
+  position: relative;
+}
+
+.project-item-container {
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  padding: 20px; */
+  /* animation: project-animation 2s infinite; */
+}
+
+/* @keyframes project-animation {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+} */
+
+/* Adjust the styles for the project thumbnail, title, description, and link */
+.project-item-container .projects__item-thumbnail {
+}
+
+.project-item-container .projects__item-title {
+}
+
+
+
+/* <------------------------ About Section ------------------------> */
 .about__title,
 .projects__title,
 .contact__title {
@@ -105,7 +155,7 @@ ul {
   margin-bottom: 0.5em;
 }
 
-/* Footer */
+/* <------------------------ Footer  ------------------------> */
 .footer {
   background-color: #f4f4f4;
   padding: 2em;
@@ -114,6 +164,8 @@ ul {
 
 .footer__text {
   margin-bottom: 1em;
+  font-size: 1.1em;
+  color: #333;
 }
 
 .footer__links {
@@ -123,15 +175,81 @@ ul {
 .footer__link {
   padding: 0.5em;
   display: inline-block;
+  color: #666;
+  transition: color 0.3s;
 }
 
 .footer__link:hover {
-  color: #555;
+  color: #333;
 }
 
-.social__link {
+/* <------------------------ Contacts Section ------------------------> */
+
+/* Contact us Form */
+.footer__contact {
+  position: relative;
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.footer__contact-form {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.footer__contact-title {
+  margin-bottom: 1em;
+  font-size: 1.5em;
+}
+
+.footer__label {
+  font-size: 1rem;
+}
+
+.footer__input,
+.footer__textarea {
+  width: 100%;
+  padding: 0.5em;
+  margin: 0.5em 0;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.footer__submit {
+  width: 100%;
+  padding: 0.5em;
+  background-color: rgb(27, 27, 27);
+  color: #fff;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin-top: 1em;
+}
+
+/* <------------------------ Socials  ------------------------> */
+
+.footer__social-links {
+  padding: 1em;
   display: inline-block;
   margin: 0 0.5em;
+  font-size: 1.1em;
+  color: #666;
+  transition: color 0.3s;
 }
 
-/* Socials */
+.footer__social-link:hover {
+  color: #333;
+}
+
+@media (min-width: 768px) {
+  /* Tablet styles */
+}
+
+@media (min-width: 992px) {
+  /* Desktop styles */
+}

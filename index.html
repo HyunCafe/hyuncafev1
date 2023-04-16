@@ -41,11 +41,21 @@
     </header>
 
     <main class="main">
-      <section id="home" class="home">
-        <h1 class="home__title">Hi, I'm Hyun</h1>
-        <p class="home__subtitle">Front-End Developer</p>
-      </section>
 
+      <section id="home" class="hero-container">
+        <div class="hero">
+          <div class="hero__left">
+            <div class="hero__heading-background">
+              <h1 class="home__title">Hi, I'm Hyun</h1>
+            </div>
+            <p class="home__subtitle"><span id="typed"></span></p>
+          </div>
+          <div class="hero__right">
+            <!-- Will add image or text later -->
+          </div>
+        </div>
+      </section>
+      
       <section id="about" class="about">
         <h2 class="about__title">About Me</h2>
         <p class="about__text">
@@ -54,7 +64,6 @@
           Driven by a desire for continuous learning, I have honed my full-stack skills through resources 
           like The Odin Project, Udemy, mentorship, and hands-on project experience. 
           I am eager to contribute my expertise, dedication, and passion to a rewarding role in the tech industry.
-
         </p>
 
         <div class="about__skills">
@@ -70,8 +79,6 @@
           <a href="resume.pdf" class="resume-download__link" download>Download My Resume (PDF)</a>
           <a href="resume.doc" class="resume-download__link" download>Download My Resume (DOC)</a>
         </div>
-
-        
       </section>
 
       <section id="projects" class="projects">
@@ -149,7 +156,7 @@
             <a class="projects__item-link" href="https://github.com/username/project8">View on GitHub</a>
           </li>
           </div>
-          
+
         </ul>
       </section>
 
@@ -232,7 +239,7 @@
       </section>
 
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="script.js" defer></script>
   </body>
 </html>
