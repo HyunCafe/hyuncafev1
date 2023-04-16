@@ -112,6 +112,14 @@ ul {
 } */
 
 /* Adjust the styles for the project thumbnail, title, description, and link */
+
+.projects__item-thumbnail {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+
 .project-item-container .projects__item-thumbnail {
 }
 
