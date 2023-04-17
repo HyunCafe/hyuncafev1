@@ -109,6 +109,20 @@ ul {
   gap: 1em;
 }
 
+/* the X for Hamburger Menu */
+.open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.open span:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+
 /* <------------------- About / Hero Container -------------------> */
 
 
