@@ -167,7 +167,7 @@ ul {
   border: 1px solid #ccc;
   border-radius: 10px;
   padding: 1.2em;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5), 0 1px 3px rgba(0, 0, 0, 0.5); 
   cursor: pointer;
   transition: transform 0.3s, box-shadow 0.3s;
   text-align: center;
