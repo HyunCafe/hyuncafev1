@@ -37,7 +37,7 @@ hamburger.addEventListener('click', () => {
   document.addEventListener("DOMContentLoaded", function () {
     const typed = new Typed("#typed", {
       strings: [
-        "A Front-End Developer",
+        "A Jr Front-End Developer",
         "A Passionate Learner",
         "Your Next Teammate"
     ],

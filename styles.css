@@ -31,7 +31,7 @@ ul {
   justify-content: space-between;
 }
 
-.nav__menu {
+.header__nav {
   position: fixed;
   top: 0;
   left: 0;
@@ -74,8 +74,7 @@ ul {
 }
 
 /* Hamburger menu */
-
-.hamburger {
+.header__hamburger {
   position: fixed;
   top: 15px;
   right: 15px;
@@ -88,7 +87,7 @@ ul {
   cursor: pointer;
 }
 
-.hamburger span {
+.header__hamburger span {
   display: block;
   width: 100%;
   height: 0.2em;
@@ -108,27 +107,16 @@ ul {
 }
 
 /* the X for Hamburger Menu */
-.hamburger.open span:nth-child(1) {
+.header__hamburger.open span:nth-child(1) {
   transform: translateY(7px) rotate(45deg);
 }
 
-.hamburger.open span:nth-child(2) {
+.header__hamburger.open span:nth-child(2) {
   opacity: 0;
 }
 
-.hamburger.open span:nth-child(3) {
+.header__hamburger.open span:nth-child(3) {
   transform: translateY(-9px) rotate(-45deg);
-}
-
-/* <------------------- About / Hero Container -------------------> */
-
-.home__subtitle {
-  font-size: 3rem;
-  font-family: "QuirkyRobot", sans-serif;
-}
-
-#typed {
-  font-weight: bold;
 }
 
 /* <------------------------ Main ------------------------> */
@@ -137,15 +125,15 @@ ul {
   padding: 2em;
 }
 
-/* Home section */
-.home__title {
+.hero__title {
   font-size: 3rem;
-  margin-bottom: 0.5em;
+  font-family: "QuirkyRobot", sans-serif;
 }
 
-.home__subtitle {
+.hero__subtitle {
   font-size: 1.5em;
   margin-bottom: 2em;
+  font-weight: bold;
 }
 
 /* <------------------------ About Section ------------------------> */
@@ -169,6 +157,11 @@ ul {
 .skills__item {
   background-color: #a1a1a1;
   padding: 0.5em;
+  margin-bottom: 1em;
+}
+
+.first-part {
+  display: block;
   margin-bottom: 1em;
 }
 
@@ -204,7 +197,6 @@ ul {
   position: relative;
 }
 
-
 .projects__item-title::before {
   content: "";
   position: absolute;
@@ -212,7 +204,7 @@ ul {
   top: calc(50% + 18px);
   width: 70%;
   height: 2px;
-  background-color:#333;
+  background-color: #333;
   background-position: 0 0;
   background-size: 30px 100%;
   transform: translateY(-50%);
@@ -225,16 +217,15 @@ ul {
   bottom: calc(50% + 18px);
   width: 70%;
   height: 2px;
-  background-color:#333;
+  background-color: #333;
   background-position: 100% 0;
   background-size: 30px 100%;
   transform: translateY(50%);
 }
 
-
 .projects__item-description {
   font-size: 16px;
-  margin: 1em 0 .5em 0;
+  margin: 1em 0 0.5em 0;
   font-style: italic;
 }
 
@@ -352,7 +343,7 @@ ul {
     flex-wrap: wrap;
   }
 
-  .hamburger {
+  .header__hamburger {
     display: none;
   }
 }

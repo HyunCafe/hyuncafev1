@@ -24,54 +24,49 @@
 
   <body class="page">
     <header class="header">
-      <div class="hamburger" id="hamburger">
+      <div class="header__hamburger" id="hamburger">
         <span></span>
         <span></span>
         <span></span>
       </div>
-      <div class="nav__menu" id="navMenu">
+      <nav class="header__nav" id="navMenu">
         <ul class="nav__list">
           <li class="nav__item"><a class="nav__link" href="#home">Home</a></li>
-          <li class="nav__item">
-            <a class="nav__link" href="#about">About</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#projects">Projects</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#contact">Contact</a>
-          </li>
+          <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
+          <li class="nav__item"><a class="nav__link" href="#projects">Projects</a></li>
+          <li class="nav__item"><a class="nav__link" href="#contact">Contact</a></li>
         </ul>
       </div>
     </header>
 
     <main class="main">
-
-      <section id="home" class="hero-container">
-        <div class="hero">
+      <section id="home" class="hero">
+        <div class="hero__content">
           <div class="hero__left">
             <div class="hero__heading-background">
-              <h1 class="home__title">Hi, I'm Hyun</h1>
+              <h1 class="hero__title">Hi, I'm Hyun</h1>
             </div>
-            <p class="home__subtitle"><span id="typed"></span></p>
+            <p class="hero__subtitle"><span id="typed"></span></p>
           </div>
           <div class="hero__right">
             <!-- Will add image or text later -->
           </div>
         </div>
       </section>
-      
+    
       <section id="about" class="about">
         <h2 class="about__title">About Me</h2>
         <p class="about__text">
-          Enthusiastic software developer with a background in sales and customer service, 
+          <span class="first-part">Enthusiastic software developer with a background in sales and customer service, 
           passionate about problem-solving and creating user-friendly solutions. Driven by a 
           desire for continuous learning, I hone my skills through resources like The Odin Project, 
-          100devs, Udemy, mentorship, and hands-on project experience. Resourceful and tenacious, 
-          I tackle challenges and knowledge gaps by tapping into friends, online communities in Discord, 
+          100devs, Udemy, mentorship, and hands-on project experience.
+          </span>
+          <span>Resourceful and tenacious, I tackle challenges and knowledge gaps by tapping into friends, online communities in Discord, 
           and resources such as Google, Reddit, Stack Overflow, and ChatGPT.  
           Eager to bring a fresh perspective and my passion for web development to make a 
           meaningful impact in a rewarding role within the tech industry.
+          </span>
         </p>
 
         <div class="about__skills">
