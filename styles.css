@@ -26,10 +26,24 @@ ul {
   justify-content: center;
 }
 
-
 .nav {
   display: flex;
   justify-content: space-between;
+}
+
+.nav__menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 37vh;
+  background-color: #fff;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+  transform: translateY(-100%);
+  z-index: 1;
 }
 
 .nav__list {
@@ -74,30 +88,14 @@ ul {
   cursor: pointer;
 }
 
-.nav__menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 37vh;
-  background-color: #fff;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transition: transform 0.3s ease;
-  transform: translateY(-100%);
-  z-index: 1;
-}
-
-
 .hamburger span {
   display: block;
   width: 100%;
-  height: .2em;
+  height: 0.2em;
   background-color: #333;
   border-radius: 2px;
+  transition: all 0.3s;
 }
-
 
 .show-menu {
   transform: translateY(0);
@@ -110,31 +108,28 @@ ul {
 }
 
 /* the X for Hamburger Menu */
-.open span:nth-child(1) {
+.hamburger.open span:nth-child(1) {
   transform: translateY(7px) rotate(45deg);
 }
 
-.open span:nth-child(2) {
+.hamburger.open span:nth-child(2) {
   opacity: 0;
 }
 
-.open span:nth-child(3) {
+.hamburger.open span:nth-child(3) {
   transform: translateY(-9px) rotate(-45deg);
 }
 
-
 /* <------------------- About / Hero Container -------------------> */
-
 
 .home__subtitle {
   font-size: 3rem;
-  font-family: 'QuirkyRobot', sans-serif;
+  font-family: "QuirkyRobot", sans-serif;
 }
 
 #typed {
   font-weight: bold;
 }
-
 
 /* <------------------------ Main ------------------------> */
 .main {
@@ -153,7 +148,6 @@ ul {
   margin-bottom: 2em;
 }
 
-
 /* <------------------------ Projects ------------------------> */
 .projects__item {
   list-style: none;
@@ -162,39 +156,30 @@ ul {
 
 .project-item-container {
   display: inline-block;
-  background-color: #f5f5f5;
-  background-image: linear-gradient(to bottom right, #f5f5f5, #eaeaea);
-  border: 1px solid #ccc;
   border-radius: 10px;
-  padding: 1.2em;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5), 0 1px 3px rgba(0, 0, 0, 0.5); 
+  padding-bottom: 0.7em;
   cursor: pointer;
   transition: transform 0.3s, box-shadow 0.3s;
   text-align: center;
-}
-
-.project-item-container:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
 }
 
 .projects__item-thumbnail {
   display: block;
   max-width: 100%;
   height: auto;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
   border-radius: 5px;
 }
 
 .projects__item-title {
   font-size: 1.5rem;
-  margin-bottom: .2em;
+  margin-bottom: 0.2em;
   font-weight: 600;
 }
 
 .projects__item-description {
   font-size: 16px;
-  margin-bottom: .2em;
+  margin-bottom: 0.2em;
   font-style: italic;
 }
 
@@ -203,7 +188,7 @@ ul {
   background-color: #333;
   color: #fff;
   text-decoration: none;
-  padding: .3em .5em;
+  padding: 0.3em 0.5em;
   border-radius: 5px;
   transition: background-color 0.3s;
 }
