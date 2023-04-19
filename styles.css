@@ -8,7 +8,7 @@
 body {
   font-family: "Roboto", sans-serif;
   line-height: 1.6;
-  background-image: url(/portfolio-v1/assets/testbg.webp);
+  background-image: url(/assets/testbg.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -175,14 +175,15 @@ ul {
   margin-bottom: 1em;
 }
 
-.skills {
+.about__skills {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-.skills__item {
-  background-color: #a1a1a1;
-  padding: 0.5em;
+.about__skills-icon {
+  width: 64px;
+  height: 64px;
   margin-bottom: 1em;
 }
 
@@ -190,6 +191,33 @@ ul {
   display: block;
   margin-bottom: 1em;
 }
+
+.resume-download {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2em;
+}
+
+.resume-download__link {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  padding: .5em;
+  margin: .5em;
+  background-color: rgb(27, 27, 27);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.resume-download__link:hover {
+  background-color: rgba(68, 68, 68, 0.7);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05),
+    0 2px 3px rgba(0, 0, 0, 0.025), inset 0 1px 2px rgba(255, 255, 255, 0.1);
+}
+
 
 /* <------------------------ Projects ------------------------> */
 .projects__item {
@@ -264,6 +292,18 @@ ul {
   border-radius: 5px;
   border: none;
   cursor: pointer;
+  position: relative;
+}
+
+.projects__item-link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -20px;
+  left:-48%;
+  width: 215%;
+  height: 4px;
+  background-color: #ffffff;
 }
 
 .projects__item-link:hover {
@@ -273,6 +313,10 @@ ul {
     0 2px 3px rgba(0, 0, 0, 0.025), inset 0 1px 2px rgba(255, 255, 255, 0.1);
 }
 
+.icon {
+  width: 50px;
+  height: 50px;
+}
 /* <------------------------ Footer  ------------------------> */
 .footer {
   /* background-color:; */
