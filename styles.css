@@ -171,8 +171,29 @@ ul {
 .about__title,
 .projects__title,
 .contact__title {
-  font-size: 2rem;
-  margin-bottom: 1em;
+  font-size: 2.5rem;
+  margin: 1em 0 1em 0;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  background-image: var(--bg-image);
+  background-size: cover;
+  -webkit-background-clip: text;
+  background-clip: text;
+  position: relative;
+}
+
+.about__title::after,
+.projects__title::after,
+.contact__title::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: calc(50% + -35px);
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  transform: translateY(50%);
+  
 }
 
 .about__text,
@@ -258,32 +279,6 @@ ul {
   position: relative;
 }
 
-.projects__item-title::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: calc(50% + 18px);
-  width: 75%;
-  height: 2px;
-  background-color: white;
-  background-position: 0 0;
-  background-size: 30px 100%;
-  transform: translateY(-50%);
-}
-
-.projects__item-title::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  bottom: calc(50% + 18px);
-  width: 75%;
-  height: 2px;
-  background-color: white;
-  background-position: 100% 0;
-  background-size: 30px 100%;
-  transform: translateY(50%);
-}
-
 .projects__item-description {
   font-size: 16px;
   margin: 1em 0 0.5em 0;
@@ -295,6 +290,7 @@ ul {
   color: #fff;
   text-decoration: none;
   padding: 0.3em 0.5em;
+  margin: 1em 0 1.5em 0;
   background-image: var(--bg-image);
   font-weight: 600;
   letter-spacing: 1px;
@@ -308,7 +304,7 @@ ul {
   content: "";
   display: block;
   position: absolute;
-  bottom: -20px;
+  bottom: -35px;
   left:-26%;
   width: 164%;
   height: 4px;
@@ -325,7 +321,7 @@ ul {
 }
 /* <------------------------ Footer  ------------------------> */
 .footer {
-  /* background-color:; */
+  margin-top: -2em;
   padding: 2em;
   text-align: center;
 }
@@ -357,9 +353,7 @@ ul {
 .footer__contact {
   position: relative;
   text-align: center;
-  max-width: 400px;
   margin: 0 auto;
-  padding: 1em;
 }
 
 .footer__contact-form {
@@ -369,7 +363,13 @@ ul {
 
 .footer__contact-title {
   margin-bottom: 1em;
-  font-size: 1.5em;
+  font-size: 2.5rem;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  background-image: var(--bg-image);
+  background-size: cover;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .footer__label {
@@ -388,7 +388,7 @@ ul {
 }
 
 .footer__submit {
-  width: 100%;
+  width: 90%;
   padding: 0.5em;
   background-image: var(--bg-image);
   font-weight: 600;
@@ -398,7 +398,7 @@ ul {
   border-radius: 5px;
   border: none;
   cursor: pointer;
-  margin-top: 1em;
+  margin: 1em 0 2em 0;
 }
 
 /* <------------------------ Socials  ------------------------> */
