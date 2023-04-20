@@ -9,6 +9,11 @@
   line-height: 1.6;
 }
 
+:root {
+  --bg-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.3)), url(assets/icons/buttonbg.png);
+}
+
+
 body {
   font-family: 'Sawarabi Mincho', serif;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/bg2.jpg);
@@ -203,9 +208,11 @@ ul {
   display: inline-block;
   color: #fff;
   text-decoration: none;
-  padding: .5em;
+  padding: .2em;
   margin: .5em;
-  background-color: rgb(159, 109, 43);
+  font-weight: 600;
+  letter-spacing: 1px;
+  background-image: var(--bg-image);
   border-radius: 5px;
   border: none;
   cursor: pointer;
@@ -288,7 +295,9 @@ ul {
   color: #fff;
   text-decoration: none;
   padding: 0.3em 0.5em;
-  background-color: rgb(159, 109, 43);
+  background-image: var(--bg-image);
+  font-weight: 600;
+  letter-spacing: 1px;
   border-radius: 5px;
   border: none;
   cursor: pointer;
@@ -300,20 +309,17 @@ ul {
   display: block;
   position: absolute;
   bottom: -20px;
-  left:-37%;
-  width: 190%;
+  left:-26%;
+  width: 164%;
   height: 4px;
   background-color: #ffffff;
 }
 
 .projects__item-link:hover {
-  background-color: rgba(68, 68, 68, 0.7);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05),
-    0 2px 3px rgba(0, 0, 0, 0.025), inset 0 1px 2px rgba(255, 255, 255, 0.1);
 }
 
 .icon {
+  margin: .2em;
   width: 50px;
   height: 50px;
 }
@@ -384,7 +390,9 @@ ul {
 .footer__submit {
   width: 100%;
   padding: 0.5em;
-  background-color: rgb(159, 109, 43);
+  background-image: var(--bg-image);
+  font-weight: 600;
+  letter-spacing: 1px;
   color: #fff;
   font-size: 1.2rem;
   border-radius: 5px;
@@ -396,12 +404,10 @@ ul {
 /* <------------------------ Socials  ------------------------> */
 
 .footer__social-links {
-  padding: 1em;
-  display: inline-block;
-  margin: 0 0.5em;
-  font-size: 1.1em;
-  color: #666;
-  transition: color 0.3s;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px; /* Adjust this value to control the spacing between grid items */
 }
 
 .footer__social-link:hover {
@@ -420,6 +426,12 @@ ul {
   .header__hamburger {
     display: none;
   }
+}
+
+
+.icon {
+  width: 50px;
+  height: 50px;
 }
 
 @media (min-width: 992px) {
