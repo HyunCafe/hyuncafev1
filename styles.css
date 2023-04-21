@@ -28,17 +28,15 @@ body {
 
 
 .glass-container {
-  padding: 20px;
+  padding: 15px;
   max-width: 100%;
   margin: 0 auto;
-
 }
 
 .content-wrapper {
   padding: 4px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
-  background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(2px);
+  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 6px;
   border: white 2px solid;
 }
@@ -85,10 +83,14 @@ ul {
   align-items: center;
   list-style: none;
   flex-wrap: wrap;
+  font-size: 1.3rem;
+  background-color: rgba(70, 94, 30, 1);
+  border-radius: 12px;
+
 }
 
 .nav__item {
-  margin: 0 1em;
+  margin: 0 .8em;
 }
 
 .nav__link {
@@ -108,8 +110,8 @@ ul {
 /* Hamburger menu */
 .header__hamburger {
   position: fixed;
-  top: 15px;
-  right: 15px;
+  top: 25px;
+  right: 30px;
   z-index: 2;
   display: flex;
   flex-direction: column;
@@ -154,11 +156,18 @@ ul {
 /* <------------------------ Main ------------------------> */
 .main {
   margin: 0 auto;
-  padding: 2em;
+  padding: 1em;
 }
 
 .hero__title {
+  margin-top: 1.5em;
   font-size: 2.5rem;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  background-image: var(--bg-image);
+  background-size: cover;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .hero__subtitle {
@@ -273,10 +282,16 @@ ul {
 }
 
 .projects__item-title {
-  font-size: 1.7rem;
+  font-size: 2rem;
   /* font-weight: 600; */
   margin-bottom: 1em;
   position: relative;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  background-image: var(--bg-image);
+  background-size: cover;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .projects__item-description {
@@ -305,8 +320,8 @@ ul {
   display: block;
   position: absolute;
   bottom: -35px;
-  left:-26%;
-  width: 164%;
+  left:-29%;
+  width: 169%;
   height: 4px;
   background-color: #ffffff;
 }
@@ -388,8 +403,8 @@ ul {
 }
 
 .footer__submit {
-  width: 90%;
-  padding: 0.5em;
+  width: 70%;
+  padding: 0.4em;
   background-image: var(--bg-image);
   font-weight: 600;
   letter-spacing: 1px;
@@ -407,7 +422,7 @@ ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 10px; /* Adjust this value to control the spacing between grid items */
+  gap: 10px;
 }
 
 .footer__social-link:hover {
