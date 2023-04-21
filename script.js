@@ -50,3 +50,13 @@ hamburger.addEventListener('click', () => {
     });
   });
 
+  document.addEventListener("DOMContentLoaded", function () {
+    const tiltElements = document.querySelectorAll(".projects__item-thumbnail");
+    
+    VanillaTilt.init(tiltElements, {
+      max: 10, 
+      glare: true, 
+      "max-glare": 0.1, 
+    });
+  });
+  
