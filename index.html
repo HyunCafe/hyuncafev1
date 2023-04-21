@@ -1,340 +1,404 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>HyunCafe Portfolio</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <meta name="description" content="HyunCafe Portfolio" />
-    <meta name="author" content="HyunCafe" />
-    <meta name="keywords" content="keyword1, keyword2, keyword3" />
-    <meta property="og:title" content="HyunCafe Portfolio" />
-    <meta
-      property="og:description"
-      content="Description of the page for social media"
-    />
-    <meta property="og:image" content="path/to/image.jpg" />
-  </head>
 
-  <body class="page">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>HyunCafe Portfolio</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="HyunCafe Portfolio" />
+  <meta name="author" content="HyunCafe" />
+  <meta name="keywords" content="keyword1, keyword2, keyword3" />
+  <meta property="og:title" content="HyunCafe Portfolio" />
+  <meta property="og:description" content="Description of the page for social media" />
+  <meta property="og:image" content="path/to/image.jpg" />
+</head>
 
-    <div class="glass-container">
-      
-      <div class="content-wrapper">
-
-    <header class="header">
-      <div class="header__hamburger" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <nav class="header__nav" id="navMenu">
-        <ul class="nav__list">
-          <li class="nav__item"><a class="nav__link" href="#home">Home</a></li>
-          <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
-          <li class="nav__item"><a class="nav__link" href="#projects">Projects</a></li>
-          <li class="nav__item"><a class="nav__link" href="#contact">Contact</a></li>
-        </ul>
+<body class="page">
+  <div class="glass-container">
+    <div class="content-wrapper">
+      <header class="header">
+        <div class="header__hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav class="header__nav" id="navMenu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#home">Home</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#about">About</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#projects">Projects</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#contact">Contact</a>
+            </li>
+          </ul>
         </nav>
-    </header>
+      </header>
 
-    <main class="main">
-      <section id="home" class="hero">
-        <div class="hero__content">
-          <div class="hero__left">
-            <div class="hero__heading-background">
-              <h1 class="hero__title">Hi, I'm Hyun</h1>
+      <main class="main">
+        <section id="home" class="hero">
+          <div class="hero__content">
+            <div class="hero__left">
+              <div class="hero__heading-background">
+                <h1 class="hero__title">Hi, I'm Hyun</h1>
+              </div>
+              <p class="hero__subtitle"><span id="typed"></span></p>
             </div>
-            <p class="hero__subtitle"><span id="typed"></span></p>
-          </div>
-          <div class="hero__right">
-            <!-- Will add image or text later -->
-          </div>
-        </div>
-      </section>
-    
-      <section id="about" class="about">
-        <h2 class="about__title">About Me</h2>
-        <p class="about__text">
-          <span class="first-part">Enthusiastic software developer with a background in sales and customer service, 
-          passionate about problem-solving and creating user-friendly solutions. Driven by a 
-          desire for continuous learning, I hone my skills through resources like The Odin Project, 
-          100devs, Udemy, mentorship, and hands-on project experience.
-          </span>
-          <span>Resourceful and tenacious, I tackle challenges and knowledge gaps by tapping into friends, online communities in Discord, 
-          and resources such as Google, Reddit, Stack Overflow, and ChatGPT.  
-          Eager to bring a fresh perspective and my passion for web development to make a 
-          meaningful impact in a rewarding role within the tech industry.
-          </span>
-        </p>
-
-        <div class="about__skills">
-          <h3 class="about__skills-title">Skills</h3>
-          <div class="about__skills-container">
-            <img class="about__skills-icon" src="assets/icons/html.png" alt="HTML Icon">
-            <img class="about__skills-icon" src="assets/icons/css.png" alt="CSS Icon" >
-            <img class="about__skills-icon" src="assets/icons/js.png" alt="JavaScript Icon" >
-            <img class="about__skills-icon" src="assets/icons/github.png" alt="GitHub Icon" >
-            <img class="about__skills-icon" src="assets/icons/webpack.png" alt="Webpack Icon" >
-            <img class="about__skills-icon" src="assets/icons/linux.png" alt="Linux Icon" >
-            <img class="about__skills-icon" src="assets/icons/npm.png" alt="Npm Icon" >
-            <img class="about__skills-icon" src="assets/icons/figma.png" alt="Figma Icon" >
-          </div>
-        </div>
-
-        <div class="resume-download">
-          <a href="resume.pdf" class="resume-download__link" download>Download My Resume (PDF)</a>
-          <a href="resume.doc" class="resume-download__link" download>Download My Resume (DOC)</a>
-        </div>
-      </section>
-
-      <section id="projects" class="projects">
-        <h2 class="projects__title">My Projects</h2>
-        <ul class="projects__list">
-          <li class="projects__item">
-            <div class="project-item-container">
-              <h3 class="projects__item-title">To Do App</h3>
-              <img class="projects__item-thumbnail" src="assets/todo.gif" alt="Odin ToDo App Thumbnail" loading="lazy">
-              <p class="projects__item-description">The ToDo App is an efficient task manager with drag-and-drop, 
-                color-coded priorities, tag tracking, and filtering. It offers a calendar view, 
-                responsive design, and local storage, utilizing libraries like Date FNS, FullCalendar, and SortableJS.</p>
-                <div class="projects__item-icons">
-                  <img class="icon" src="assets/icons/html.png" alt="HTML Icon" >
-                  <img class="icon" src="assets/icons/css.png" alt="CSS Icon" >
-                  <img class="icon" src="assets/icons/js.png" alt="JavaScript Icon" >
-                  <img class="icon" src="assets/icons/github.png" alt="GitHub Icon" >
-                  <img class="icon" src="assets/icons/webpack.png" alt="Webpack Icon" >
-                  <img class="icon" src="assets/icons/npm.png" alt="Npm Icon" >
-                  <img class="icon" src="assets/icons/figma.png" alt="Figma Icon" >
-                </div>                
-              <a class="projects__item-link" href="https://github.com/HyunCafe/odin-todoapp">View on GitHub</a>
-              <a class="projects__item-link" href="https://hyuncafe.github.io/odin-todoapp/">Live Demo</a>
+            <div class="hero__right">
+              <!-- Will add image or text later -->
             </div>
-          </li>   
-
-          <li class="projects__item">
-            <div class="project-item-container">
-              <h3 class="projects__item-title">Restaurant Page</h3>
-              <img class="projects__item-thumbnail" src="assets/restaraunt.gif" alt="Odin Restaurant Page Thumbnail" loading="lazy">
-              <p class="projects__item-description">The Restaurant Page features modularity, webpack setup, 
-                DOM manipulation, and responsive design for an engaging and user-friendly experience, 
-                including a smooth pageload and hamburger menu for easy navigation.</p>
-                <div class="projects__item-icons">
-                  <img class="icon" src="assets/icons/html.png" alt="HTML Icon" >
-                  <img class="icon" src="assets/icons/css.png" alt="CSS Icon" >
-                  <img class="icon" src="assets/icons/js.png" alt="JavaScript Icon" >
-                  <img class="icon" src="assets/icons/github.png" alt="GitHub Icon" >
-                  <img class="icon" src="assets/icons/webpack.png" alt="Webpack Icon" >
-                  <img class="icon" src="assets/icons/npm.png" alt="Npm Icon" >
-                </div>   
-              <a class="projects__item-link" href="https://github.com/HyunCafe/odin-restaurantpage">View on GitHub</a>
-              <a class="projects__item-link" href="https://hyuncafe.github.io/odin-restaurantpage/">Live Demo</a>
-            </div>
-          </li>
-
-          <li class="projects__item">
-            <div class="project-item-container">
-              <h3 class="projects__item-title">Tic Tac Toe</h3>
-              <img class="projects__item-thumbnail" src="assets/tictactoe.gif" alt="Odin TicTacToe Thumbnail" loading="lazy">
-              <p class="projects__item-description">This tic-tac-toe game demonstrates game logic, state management, 
-                UI design, and responsive web design. Key features include a DOM-based game board, 
-                winning logic, computer vs. human gameplay, and a mobile-responsive design.</p>
-                <div class="projects__item-icons">
-                  <img class="icon" src="assets/icons/html.png" alt="HTML Icon" >
-                  <img class="icon" src="assets/icons/css.png" alt="CSS Icon" >
-                  <img class="icon" src="assets/icons/js.png" alt="JavaScript Icon" >
-                  <img class="icon" src="assets/icons/github.png" alt="GitHub Icon" >
-                </div>   
-              <a class="projects__item-link" href="https://github.com/HyunCafe/odin-tictactoe">View on GitHub</a>
-              <a class="projects__item-link" href="https://hyuncafe.github.io/odin-tictactoe/">Live Demo</a>
-            </div>
-          </li>
-        
-          <li class="projects__item">
-            <div class="project-item-container">
-              <h3 class="projects__item-title">Library</h3>
-              <img class="projects__item-thumbnail" src="assets/library.gif" alt="Odin Library Thumbnail" loading="lazy">
-              <p class="projects__item-description">Library is a web app for managing resources in a table 
-                format with sorting and saving/loading capabilities through local storage, and full note view.</p>
-                <div class="projects__item-icons">
-                  <img class="icon" src="assets/icons/html.png" alt="HTML Icon" >
-                  <img class="icon" src="assets/icons/css.png" alt="CSS Icon" >
-                  <img class="icon" src="assets/icons/js.png" alt="JavaScript Icon" >
-                  <img class="icon" src="assets/icons/github.png" alt="GitHub Icon" >
-                </div>   
-              <a class="projects__item-link" href="https://github.com/HyunCafe/odin-library">View on GitHub</a>
-              <a class="projects__item-link" href="https://hyuncafe.github.io/odin-library/">Live Demo</a>
-            </div>
-          </li>
-      
-          <li class="projects__item">
-            <div class="project-item-container">
-              <h3 class="projects__item-title">Calculator</h3>
-              <img class="projects__item-thumbnail" src="assets/calculator.gif" alt="Odin Calculator Thumbnail" loading="lazy">
-              <p class="projects__item-description">This calculator project showcases complex 
-                UI components and an intuitive user experience, supporting basic arithmetic operations 
-                and Windows-like features. The design includes a desktop simulation, search box, and 
-                right-click menu, emphasizing user-friendly design and responsiveness.</p>
-                <div class="projects__item-icons">
-                  <img class="icon" src="assets/icons/html.png" alt="HTML Icon" >
-                  <img class="icon" src="assets/icons/css.png" alt="CSS Icon" >
-                  <img class="icon" src="assets/icons/js.png" alt="JavaScript Icon" >
-                  <img class="icon" src="assets/icons/github.png" alt="GitHub Icon" >
-                </div>   
-              <a class="projects__item-link" href="https://github.com/HyunCafe/odin-calculator">View on GitHub</a>
-              <a class="projects__item-link" href="https://hyuncafe.github.io/odin-calculator/">Live Demo</a>
-            </div>
-          </li>
-
-          <li class="projects__item">
-            <div class="project-item-container">
-              <h3 class="projects__item-title">Dashboard</h3>
-              <img class="projects__item-thumbnail" src="assets/dashboard.gif" alt="Odin Dashboard Thumbnail" loading="lazy">
-              <p class="projects__item-description">The Dashboard project is a responsive web 
-                Dashboard with a visually appealing design, featuring material icons, a video theme background, 
-                and lazy loading for optimized page load times. It demonstrates diverse widget integration, such as 
-                a Spotify widget and Trello todo list, emphasizing adaptability and catering to various user preferences.</p>
-                <div class="projects__item-icons">
-                  <img class="icon" src="assets/icons/html.png" alt="HTML Icon" >
-                  <img class="icon" src="assets/icons/css.png" alt="CSS Icon" >
-                  <img class="icon" src="assets/icons/js.png" alt="JavaScript Icon" >
-                  <img class="icon" src="assets/icons/github.png" alt="GitHub Icon" >
-                  <img class="icon" src="assets/icons/figma.png" alt="Figma Icon" >
-                </div>   
-              <a class="projects__item-link" href="https://github.com/HyunCafe/odin-dashboard">View on GitHub</a>
-              <a class="projects__item-link" href="https://hyuncafe.github.io/odin-dashboard/">Live Demo</a>
-            </div>
-          </li>
-        
-          <li class="projects__item">
-            <div class="project-item-container">
-              <h3 class="projects__item-title">Signup Form</h3>
-              <img class="projects__item-thumbnail" src="assets/signupform.gif" alt="Odin Signup Form Thumbnail" loading="lazy">
-              <p class="projects__item-description">The Signup Form project showcases my skills in HTML and CSS, 
-                including semantic login forms and polished aesthetics. It highlights my ability to work with libraries
-                 like Font Awesome, validate code, debug, manage timelines, and create responsive designs, 
-                 reflecting my commitment to web development skill improvement.</p>
-                 <div class="projects__item-icons">
-                  <img class="icon" src="assets/icons/html.png" alt="HTML Icon" >
-                  <img class="icon" src="assets/icons/css.png" alt="CSS Icon" >
-                  <img class="icon" src="assets/icons/js.png" alt="JavaScript Icon" >
-                  <img class="icon" src="assets/icons/github.png" alt="GitHub Icon" >
-                </div>   
-              <a class="projects__item-link" href="https://github.com/HyunCafe/odin-signupform">View on GitHub</a>
-              <a class="projects__item-link" href="https://hyuncafe.github.io/odin-signupform/">Live Demo</a>
-            </div>
-          </li>
-        
-          <li class="projects__item">
-            <div class="project-item-container">
-              <h3 class="projects__item-title">Etchasketch</h3>
-              <img class="projects__item-thumbnail" src="assets/etchasketch.gif" alt="Odin Etchasketch Thumbnail" loading="lazy">
-              <p class="projects__item-description">The Etch A Sketch web app lets users draw on a grid, 
-                featuring unique abilities like counting colored squares without recounting them. 
-                It includes three grid sizes, color modes, an eraser mode, and a reset button. 
-                The app also offers a dark mode with a glowing grid and responsive design for an enhanced user experience.</p>
-                <div class="projects__item-icons">
-                  <img class="icon" src="assets/icons/html.png" alt="HTML Icon" >
-                  <img class="icon" src="assets/icons/css.png" alt="CSS Icon" >
-                  <img class="icon" src="assets/icons/js.png" alt="JavaScript Icon" >
-                  <img class="icon" src="assets/icons/github.png" alt="GitHub Icon">
-                </div>   
-              <a class="projects__item-link" href="https://github.com/HyunCafe/odin-etchasketch">View on GitHub</a>
-              <a class="projects__item-link" href="https://hyuncafe.github.io/odin-etchasketch/">Live Demo</a>
-            </div>
-          </li>
-        
-        </ul>
-      </section>
-
-    </main>
-
-    <footer class="footer">
-      <section id="contact" class="footer__contact">
-        <h2 class="footer__contact-title">Contact Me</h2>
-
-        <form class="footer__contact-form">
-          <label class="footer__label" for="name">Name:</label>
-          <input
-            class="footer__input"
-            type="text"
-            id="name"
-            name="name"
-            required
-          />
-    
-          <label class="footer__label" for="email">Email:</label>
-          <input
-            class="footer__input"
-            type="email"
-            id="email"
-            name="email"
-            required
-          />
-    
-          <label class="footer__label" for="message">Message:</label>
-          <textarea
-            class="footer__textarea"
-            id="message"
-            name="message"
-            required
-          ></textarea>
-    
-          <button class="footer__submit" type="submit">Send Message</button>
-        </form>
-      </section>
-
-      <section class="footer__social">
-        <div class="footer__social-links">
-          <div class="footer__social-item">
-            <a class="footer__social-link footer__social-link--email" href="mailto:eparksuncafe@gmail.com" target="_blank">
-              <img class="icon" src="assets/icons/gmail.png" alt="Gmail Icon" >
-              <span>Email</span>
-            </a>
           </div>
-          <div class="footer__social-item">
-            <a class="footer__social-link footer__social-link--linkedin" href="https://www.linkedin.com/in/hyuncafe/" target="_blank">
-              <img class="icon" src="assets/icons/linkedin.png" alt="LinkedIn Icon" >
-              <span>LinkedIn</span>
-            </a>
-          </div>
-          <div class="footer__social-item">
-            <a class="footer__social-link footer__social-link--github" href="https://github.com/HyunCafe" target="_blank">
-              <img class="icon" src="assets/icons/github.png" alt="Github Icon" >
-              <span>GitHub</span>
-            </a>
-          </div>
-          <div class="footer__social-item">
-            <a class="footer__social-link footer__social-link--devto" href="https://dev.to/hyuncafe" target="_blank">
-              <img class="icon" src="assets/icons/devto.png" alt="DevTo Icon" >
-              <span>Dev.to</span>
-            </a>
-          </div>
-          <div class="footer__social-item">
-            <a class="footer__social-link footer__social-link--devcard" href="https://app.daily.dev/HyunCafe" target="_blank">
-              <img class="icon" src="assets/icons/devcard.png" alt="DevCard Icon" >
-              <span>Dev Card</span>
-            </a>
-          </div>
-          <div class="footer__social-item">
-            <a class="footer__social-link footer__social-link--discord" href="https://discordapp.com/users/hyunsun#7206" target="_blank">
-              <img class="icon" src="assets/icons/discord.png" alt="Discord Icon" >
-              <span>Discord</span>
-            </a>
-          </div>
-        </div>
-      </section>
+        </section>
 
-    </footer>
-      </div>
+        <section id="about" class="about">
+          <h2 class="about__title">About Me</h2>
+          <p class="about__text">
+            <span class="first-part">Enthusiastic software developer with a background in sales and
+              customer service, passionate about problem-solving and creating
+              user-friendly solutions. Driven by a desire for continuous
+              learning, I hone my skills through resources like The Odin
+              Project, 100devs, Udemy, mentorship, and hands-on project
+              experience.
+            </span>
+            <span>Resourceful and tenacious, I tackle challenges and knowledge
+              gaps by tapping into friends, online communities in Discord, and
+              resources such as Google, Reddit, Stack Overflow, and ChatGPT.
+              Eager to bring a fresh perspective and my passion for web
+              development to make a meaningful impact in a rewarding role
+              within the tech industry.
+            </span>
+          </p>
+
+          <div class="about__skills">
+            <h3 class="about__skills-title">Skills</h3>
+            <div class="about__skills-container">
+              <img class="about__skills-icon" src="assets/icons/html.png" alt="HTML Icon" />
+              <img class="about__skills-icon" src="assets/icons/css.png" alt="CSS Icon" />
+              <img class="about__skills-icon" src="assets/icons/js.png" alt="JavaScript Icon" />
+              <img class="about__skills-icon" src="assets/icons/github.png" alt="GitHub Icon" />
+              <img class="about__skills-icon" src="assets/icons/webpack.png" alt="Webpack Icon" />
+              <img class="about__skills-icon" src="assets/icons/linux.png" alt="Linux Icon" />
+              <img class="about__skills-icon" src="assets/icons/npm.png" alt="Npm Icon" />
+              <img class="about__skills-icon" src="assets/icons/figma.png" alt="Figma Icon" />
+            </div>
+          </div>
+
+          <div class="resume-download">
+            <a href="resume.pdf" class="resume-download__link" download>Download My Resume (PDF)</a>
+            <a href="resume.doc" class="resume-download__link" download>Download My Resume (DOC)</a>
+          </div>
+        </section>
+
+        <section id="projects" class="projects">
+          <h2 class="projects__title">My Projects</h2>
+          <ul class="projects__list">
+            <li class="projects__item">
+              <div class="project-item-container">
+                <div class="project-item-left">
+                  <h3 class="projects__item-title">To Do App</h3>
+                  <img class="projects__item-thumbnail" src="assets/todo.gif" alt="Odin ToDo App Thumbnail"
+                    loading="lazy" data-tilt />
+                </div>
+                <div class="project-item-right">
+                  <p class="projects__item-description">
+                    The ToDo App is an efficient task manager with
+                    drag-and-drop, color-coded priorities, tag tracking, and
+                    filtering. It offers a calendar view, responsive design,
+                    and local storage, utilizing libraries like Date FNS,
+                    FullCalendar, and SortableJS.
+                  </p>
+                  <div class="projects__item-icons">
+                    <img class="icon" src="assets/icons/html.png" alt="HTML Icon" />
+                    <img class="icon" src="assets/icons/css.png" alt="CSS Icon" />
+                    <img class="icon" src="assets/icons/js.png" alt="JavaScript Icon" />
+                    <img class="icon" src="assets/icons/github.png" alt="GitHub Icon" />
+                    <img class="icon" src="assets/icons/webpack.png" alt="Webpack Icon" />
+                    <img class="icon" src="assets/icons/npm.png" alt="Npm Icon" />
+                    <img class="icon" src="assets/icons/figma.png" alt="Figma Icon" />
+                  </div>
+                  <a class="projects__item-link" href="https://github.com/HyunCafe/odin-todoapp">View on GitHub</a>
+                  <a class="projects__item-link" href="https://hyuncafe.github.io/odin-todoapp/">Live Demo</a>
+                </div>
+              </div>
+            </li>
+
+            <li class="projects__item">
+              <div class="project-item-container">
+                <div class="project-item-left">
+                  <h3 class="projects__item-title">Restaurant Page</h3>
+                  <img class="projects__item-thumbnail" src="assets/restaraunt.gif" alt="Odin Restaurant Page Thumbnail"
+                    loading="lazy" data-tilt />
+                </div>
+                <div class="project-item-right">
+                  <p class="projects__item-description">
+                    The Restaurant Page features modularity, webpack setup,
+                    DOM manipulation, and responsive design for an engaging
+                    and user-friendly experience, including a smooth pageload
+                    and hamburger menu for easy navigation.
+                  </p>
+                  <div class="projects__item-icons">
+                    <img class="icon" src="assets/icons/html.png" alt="HTML Icon" />
+                    <img class="icon" src="assets/icons/css.png" alt="CSS Icon" />
+                    <img class="icon" src="assets/icons/js.png" alt="JavaScript Icon" />
+                    <img class="icon" src="assets/icons/github.png" alt="GitHub Icon" />
+                    <img class="icon" src="assets/icons/webpack.png" alt="Webpack Icon" />
+                    <img class="icon" src="assets/icons/npm.png" alt="Npm Icon" />
+                  </div>
+                  <a class="projects__item-link" href="https://github.com/HyunCafe/odin-restaurantpage">View on
+                    GitHub</a>
+                  <a class="projects__item-link" href="https://hyuncafe.github.io/odin-restaurantpage/">Live Demo</a>
+                </div>
+              </div>
+            </li>
+
+            <li class="projects__item">
+              <div class="project-item-container">
+                <div class="project-item-left">
+                  <h3 class="projects__item-title">Tic Tac Toe</h3>
+                  <img class="projects__item-thumbnail" src="assets/tictactoe.gif" alt="Odin TicTacToe Thumbnail"
+                    loading="lazy" data-tilt />
+                </div>
+                <div class="project-item-right">
+                  <p class="projects__item-description">
+                    This tic-tac-toe game demonstrates game logic, state
+                    management, UI design, and responsive web design. Key
+                    features include a DOM-based game board, winning logic,
+                    computer vs. human gameplay, and a mobile-responsive
+                    design.
+                  </p>
+                  <div class="projects__item-icons">
+                    <img class="icon" src="assets/icons/html.png" alt="HTML Icon" />
+                    <img class="icon" src="assets/icons/css.png" alt="CSS Icon" />
+                    <img class="icon" src="assets/icons/js.png" alt="JavaScript Icon" />
+                    <img class="icon" src="assets/icons/github.png" alt="GitHub Icon" />
+                  </div>
+                  <a class="projects__item-link" href="https://github.com/HyunCafe/odin-tictactoe">View on GitHub</a>
+                  <a class="projects__item-link" href="https://hyuncafe.github.io/odin-tictactoe/">Live Demo</a>
+                </div>
+              </div>
+            </li>
+
+            <li class="projects__item">
+              <div class="project-item-container">
+                <div class="project-item-left">
+                  <h3 class="projects__item-title">Library</h3>
+                  <img class="projects__item-thumbnail" src="assets/library.gif" alt="Odin Library Thumbnail"
+                    loading="lazy" data-tilt />
+                </div>
+                <div class="project-item-right">
+                  <p class="projects__item-description">
+                    Library is a web app for managing resources in a table
+                    format with sorting and saving/loading capabilities
+                    through local storage, and full note view.
+                  </p>
+                  <div class="projects__item-icons">
+                    <img class="icon" src="assets/icons/html.png" alt="HTML Icon" />
+                    <img class="icon" src="assets/icons/css.png" alt="CSS Icon" />
+                    <img class="icon" src="assets/icons/js.png" alt="JavaScript Icon" />
+                    <img class="icon" src="assets/icons/github.png" alt="GitHub Icon" />
+                  </div>
+                  <a class="projects__item-link" href="https://github.com/HyunCafe/odin-library">View on GitHub</a>
+                  <a class="projects__item-link" href="https://hyuncafe.github.io/odin-library/">Live Demo</a>
+                </div>
+              </div>
+            </li>
+
+            <li class="projects__item">
+              <div class="project-item-container">
+                <div class="project-item-left">
+                  <h3 class="projects__item-title">Calculator</h3>
+                  <img class="projects__item-thumbnail" src="assets/calculator.gif" alt="Odin Calculator Thumbnail"
+                    loading="lazy" data-tilt />
+                </div>
+                <div class="project-item-right">
+                  <p class="projects__item-description">
+                    This calculator project showcases complex UI components
+                    and an intuitive user experience, supporting basic
+                    arithmetic operations and Windows-like features. The
+                    design includes a desktop simulation, search box, and
+                    right-click menu, emphasizing user-friendly design and
+                    responsiveness.
+                  </p>
+                  <div class="projects__item-icons">
+                    <img class="icon" src="assets/icons/html.png" alt="HTML Icon" />
+                    <img class="icon" src="assets/icons/css.png" alt="CSS Icon" />
+                    <img class="icon" src="assets/icons/js.png" alt="JavaScript Icon" />
+                    <img class="icon" src="assets/icons/github.png" alt="GitHub Icon" />
+                  </div>
+                  <a class="projects__item-link" href="https://github.com/HyunCafe/odin-calculator">View on GitHub</a>
+                  <a class="projects__item-link" href="https://hyuncafe.github.io/odin-calculator/">Live Demo</a>
+                </div>
+              </div>
+            </li>
+
+            <li class="projects__item">
+              <div class="project-item-container">
+                <div class="project-item-left">
+                  <h3 class="projects__item-title">Dashboard</h3>
+                  <img class="projects__item-thumbnail" src="assets/dashboard.gif" alt="Odin Dashboard Thumbnail"
+                    loading="lazy" data-tilt />
+                </div>
+                <div class="project-item-right">
+                  <p class="projects__item-description">
+                    The Dashboard project is a responsive web Dashboard with a
+                    visually appealing design, featuring material icons, a
+                    video theme background, and lazy loading for optimized
+                    page load times. It demonstrates diverse widget
+                    integration, such as a Spotify widget and Trello todo
+                    list, emphasizing adaptability and catering to various
+                    user preferences.
+                  </p>
+                  <div class="projects__item-icons">
+                    <img class="icon" src="assets/icons/html.png" alt="HTML Icon" />
+                    <img class="icon" src="assets/icons/css.png" alt="CSS Icon" />
+                    <img class="icon" src="assets/icons/js.png" alt="JavaScript Icon" />
+                    <img class="icon" src="assets/icons/github.png" alt="GitHub Icon" />
+                    <img class="icon" src="assets/icons/figma.png" alt="Figma Icon" />
+                  </div>
+                  <a class="projects__item-link" href="https://github.com/HyunCafe/odin-dashboard">View on GitHub</a>
+                  <a class="projects__item-link" href="https://hyuncafe.github.io/odin-dashboard/">Live Demo</a>
+                </div>
+              </div>
+            </li>
+
+            <li class="projects__item">
+              <div class="project-item-container">
+                <div class="project-item-left">
+                  <h3 class="projects__item-title">Signup Form</h3>
+                  <img class="projects__item-thumbnail" src="assets/signupform.gif" alt="Odin Signup Form Thumbnail"
+                    loading="lazy" data-tilt />
+                </div>
+                <div class="project-item-right">
+                  <p class="projects__item-description">
+                    The Signup Form project showcases my skills in HTML and
+                    CSS, including semantic login forms and polished
+                    aesthetics. It highlights my ability to work with
+                    libraries like Font Awesome, validate code, debug, manage
+                    timelines, and create responsive designs, reflecting my
+                    commitment to web development skill improvement.
+                  </p>
+                  <div class="projects__item-icons">
+                    <img class="icon" src="assets/icons/html.png" alt="HTML Icon" />
+                    <img class="icon" src="assets/icons/css.png" alt="CSS Icon" />
+                    <img class="icon" src="assets/icons/js.png" alt="JavaScript Icon" />
+                    <img class="icon" src="assets/icons/github.png" alt="GitHub Icon" />
+                  </div>
+                  <a class="projects__item-link" href="https://github.com/HyunCafe/odin-signupform">View on GitHub</a>
+                  <a class="projects__item-link" href="https://hyuncafe.github.io/odin-signupform/">Live Demo</a>
+                </div>
+              </div>
+            </li>
+
+            <li class="projects__item">
+              <div class="project-item-container">
+                <div class="project-item-left">
+                  <h3 class="projects__item-title">Etchasketch</h3>
+                  <img class="projects__item-thumbnail" src="assets/etchasketch.gif" alt="Odin Etchasketch Thumbnail"
+                    loading="lazy" data-tilt />
+                </div>
+                <div class="project-item-right">
+                  <p class="projects__item-description">
+                    The Etch A Sketch web app lets users draw on a grid,
+                    featuring unique abilities like counting colored squares
+                    without recounting them. It includes three grid sizes,
+                    color modes, an eraser mode, and a reset button. The app
+                    also offers a dark mode with a glowing grid and responsive
+                    design for an enhanced user experience.
+                  </p>
+                  <div class="projects__item-icons">
+                    <img class="icon" src="assets/icons/html.png" alt="HTML Icon" />
+                    <img class="icon" src="assets/icons/css.png" alt="CSS Icon" />
+                    <img class="icon" src="assets/icons/js.png" alt="JavaScript Icon" />
+                    <img class="icon" src="assets/icons/github.png" alt="GitHub Icon" />
+                  </div>
+                  <a class="projects__item-link" href="https://github.com/HyunCafe/odin-etchasketch">View on GitHub</a>
+                  <a class="projects__item-link" href="https://hyuncafe.github.io/odin-etchasketch/">Live Demo</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <section id="contact" class="footer__contact">
+          <h2 class="footer__contact-title">Contact Me</h2>
+
+          <form class="footer__contact-form">
+            <label class="footer__label" for="name">Name:</label>
+            <input class="footer__input" type="text" id="name" name="name" required />
+
+            <label class="footer__label" for="email">Email:</label>
+            <input class="footer__input" type="email" id="email" name="email" required />
+
+            <label class="footer__label" for="message">Message:</label>
+            <textarea class="footer__textarea" id="message" name="message" required></textarea>
+
+            <button class="footer__submit" type="submit">Send Message</button>
+          </form>
+        </section>
+
+        <section class="footer__social">
+          <div class="footer__social-links">
+            <div class="footer__social-item">
+              <a class="footer__social-link footer__social-link--email" href="mailto:eparksuncafe@gmail.com"
+                target="_blank">
+                <img class="icon" src="assets/icons/gmail.png" alt="Gmail Icon" />
+                <span>Email</span>
+              </a>
+            </div>
+            <div class="footer__social-item">
+              <a class="footer__social-link footer__social-link--linkedin" href="https://www.linkedin.com/in/hyuncafe/"
+                target="_blank">
+                <img class="icon" src="assets/icons/linkedin.png" alt="LinkedIn Icon" />
+                <span>LinkedIn</span>
+              </a>
+            </div>
+            <div class="footer__social-item">
+              <a class="footer__social-link footer__social-link--github" href="https://github.com/HyunCafe"
+                target="_blank">
+                <img class="icon" src="assets/icons/github.png" alt="Github Icon" />
+                <span>GitHub</span>
+              </a>
+            </div>
+            <div class="footer__social-item">
+              <a class="footer__social-link footer__social-link--devto" href="https://dev.to/hyuncafe" target="_blank">
+                <img class="icon" src="assets/icons/devto.png" alt="DevTo Icon" />
+                <span>Dev.to</span>
+              </a>
+            </div>
+            <div class="footer__social-item">
+              <a class="footer__social-link footer__social-link--devcard" href="https://app.daily.dev/HyunCafe"
+                target="_blank">
+                <img class="icon" src="assets/icons/devcard.png" alt="DevCard Icon" />
+                <span>Dev Card</span>
+              </a>
+            </div>
+            <div class="footer__social-item">
+              <a class="footer__social-link footer__social-link--discord"
+                href="https://discordapp.com/users/hyunsun#7206" target="_blank">
+                <img class="icon" src="assets/icons/discord.png" alt="Discord Icon" />
+                <span>Discord</span>
+              </a>
+            </div>
+          </div>
+        </section>
+      </footer>
+    </div>
   </div>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="script.js" defer></script>
-  </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="script.js" defer></script>
+</body>
+
 </html>
