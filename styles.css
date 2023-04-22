@@ -82,6 +82,7 @@ ul {
   align-items: center;
   list-style: none;
   flex-wrap: wrap;
+  color: #597c21;
   font-size: 1.3rem;
   background-color: rgba(70, 94, 30, 1);
   border-radius: 12px;
@@ -210,6 +211,13 @@ ul {
   margin-bottom: 1em;
 }
 
+/* Widgets */
+[class^="widgets__"] {
+  width: 107%;
+  transform: translateX(-3%);
+}
+
+/* Skills */
 .about__skills {
   display: flex;
   flex-wrap: wrap;
@@ -227,6 +235,7 @@ ul {
   margin-bottom: 1em;
 }
 
+/* Resume DL Links */
 .resume-download {
   display: flex;
   flex-direction: column;
