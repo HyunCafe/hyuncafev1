@@ -315,7 +315,7 @@ ul {
 }
 
 .projects__item-description {
-  font-size: 16px;
+  font-size: 1rem;
   margin: 1em 0 0.5em 0;
   font-style: italic;
 }
@@ -586,6 +586,7 @@ ul {
   .about__text,
   .skills__item {
     margin-bottom: 1em;
+    font-size: 1.3rem;
   }
 
   .about__skills {
@@ -596,7 +597,7 @@ ul {
   .about__skills-icon {
     width: 64px;
     height: 64px;
-    margin-bottom: 1em;
+    margin: .5em;
   }
 
   .first-part {
@@ -671,7 +672,7 @@ ul {
   }
 
   .projects__item-description {
-    font-size: 16px;
+    font-size: 1.2rem;
     margin: 1em 0 0.5em 0;
   }
 
@@ -734,7 +735,7 @@ ul {
   }
 
   .footer__label {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 
   .footer__input,
