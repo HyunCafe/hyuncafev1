@@ -45,7 +45,7 @@ hamburger.addEventListener('click', () => {
       backSpeed: 30,
       loop: true,
       smartBackspace: true,
-      showCursor: false,
+      showCursor: true,
       backDelay: 2000,
     });
   });
