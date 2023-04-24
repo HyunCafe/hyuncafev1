@@ -664,10 +664,14 @@ ul {
     max-width: 40%;
   }
 
-  .projects__item:nth-child(odd) .project-item-container {
-    flex-direction: row-reverse;
+  .projects__item:nth-of-type(odd) .project-item-left {
+    order: 1;
   }
-
+  
+  .projects__item:nth-of-type(odd) .project-item-right {
+    order: 0;
+  }
+  
   .projects__item-thumbnail {
     max-width: 100%;
     height: auto;
