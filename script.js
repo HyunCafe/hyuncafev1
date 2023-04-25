@@ -42,3 +42,21 @@ document.addEventListener('DOMContentLoaded', function() {
     'max-glare': 0.1, 
   });
 });
+
+// Hide Navbar on downscroll, show on upscroll
+(function() {
+  let previousScrollPosition = window.pageYOffset;
+  const navbar = document.querySelector('.header__nav');
+
+  window.addEventListener('scroll', () => {
+    const currentScrollPosition = window.pageYOffset;
+
+    if (previousScrollPosition > currentScrollPosition) {
+      navbar.classList.remove('header__nav--hidden');
+    } else {
+      navbar.classList.add('header__nav--hidden');
+    }
+
+    previousScrollPosition = currentScrollPosition;
+  });
+})();
