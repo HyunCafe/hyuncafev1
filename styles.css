@@ -17,7 +17,7 @@
 body {
   font-family: "Sawarabi Mincho", serif;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(/assets/bg2.jpg);
+    url(assets/bg2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -126,7 +126,7 @@ ul {
   position: fixed;
   top: 25px;
   right: 30px;
-  z-index: 2;
+  z-index: 7;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -142,6 +142,7 @@ ul {
   background-color: #ffffff;
   border-radius: 2px;
   transition: all 0.3s;
+  z-index: 7;
 }
 
 .show-menu {
