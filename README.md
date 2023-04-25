@@ -4,6 +4,10 @@ This repository showcases a selection of my projects using pure HTML, CSS, and J
 
 This portfolio is a testament to my dedication to writing clean, efficient, and maintainable code while focusing on user experience and visual appeal. It serves as a foundation for future growth and exploration in the world of web development.
 
+![Project Animation](/portfolio.gif)
+<p align="center">
+<a href="https://hyuncafe.netlify.app/" target="_blank">Live Link</a>
+</p>
 
 ### Features
 * Pure Vanilla HTMl, CSS, and JS, no frameworks.
