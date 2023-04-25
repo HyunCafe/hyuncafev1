@@ -229,8 +229,7 @@ ul {
 
 /* Widgets */
 [class^="widgets__"] {
-  width: 104%;
-  transform: translateX(-2%);
+  width: 100%;
 }
 
 /* Skills */
