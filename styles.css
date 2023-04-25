@@ -228,10 +228,10 @@ ul {
 }
 
 /* Widgets */
-/* [class^="widgets__"] {
+[class^="widgets__"] {
   width: 104%;
-  transform: translateX(-2%);
-} */
+  transform: translateX(-1%);
+}
 
 .widgets__contributions,
 .widgets__stats,
