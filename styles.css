@@ -297,13 +297,18 @@ ul {
 }
 
 .project-item-container {
-  display: inline-block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
   border-radius: 10px;
   padding-top: 3em;
   padding-bottom: 0.7em;
   cursor: pointer;
   transition: transform 0.3s, box-shadow 0.3s;
-  text-align: center;
+}
+
+.first-project {
+  margin-top: -7em;
 }
 
 .projects__item-thumbnail {
@@ -318,7 +323,7 @@ ul {
 
 .projects__item-title {
   font-size: 2rem;
-  margin-bottom: 1em;
+  margin-bottom: .5em;
   position: relative;
   color: transparent;
   -webkit-text-fill-color: transparent;
@@ -671,7 +676,7 @@ ul {
 
   /* Projects */
   .project-item-container {
-    padding-bottom: 6em;
+    padding-bottom: 2em;
     display: flex;
     justify-content: space-around;
   }
@@ -707,7 +712,7 @@ ul {
 
   .projects__item-title {
     font-size: 2rem;
-    margin-bottom: 1em;
+    margin-bottom: 0em;
   }
 
   .projects__item-description {
